@@ -1,0 +1,84 @@
+.last-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5rem;
+  margin-bottom: 150px;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__title {
+    max-width: 17.5rem;
+    text-align: left;
+    line-height: 2.2rem;
+  }
+
+  &__info-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__item {
+    height: 4.5rem;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    background: #410b0a;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922) inset;
+    font-weight: 600;
+
+    span {
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: -0.7rem;
+
+    img {
+      max-width: 36rem;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+    &::before {
+      z-index: -1;
+      right: -2.75rem;
+      top: -2.25rem;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 20rem;
+      border: 1px solid var(--brown-color);
+    }
+  }
+}
+
+.start-section__link-wildberries {
+  #last-section-gradient stop {
+    transition: stop-color 0.3s;
+  }
+
+  &:hover {
+    #last-section-gradient stop {
+      stop-color: #fff;
+    }
+  }
+}

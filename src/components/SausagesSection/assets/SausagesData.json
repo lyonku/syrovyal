@@ -1,0 +1,20 @@
+[
+  {
+    "img": { "src": "/imgs/sausages/klassicheskiye.webp", "alt": "" },
+    "title": "МИНИ колбаски классические",
+    "desc": "500 грамм",
+    "links": { "ozon": "https://ozon.ru/t/oLMQq5L", "wildberries": "" }
+  },
+  {
+    "img": { "src": "/imgs/sausages/s-syrom.webp", "alt": "" },
+    "title": "МИНИ колбаски с сыром",
+    "desc": "500 грамм",
+    "links": { "ozon": "https://ozon.ru/t/1MAkjMj", "wildberries": "" }
+  },
+  {
+    "img": { "src": "/imgs/sausages/adjika.webp", "alt": "" },
+    "title": "МИНИ колбаски со вкусом аджики",
+    "desc": "500 грамм",
+    "links": { "ozon": "", "wildberries": "" }
+  }
+]

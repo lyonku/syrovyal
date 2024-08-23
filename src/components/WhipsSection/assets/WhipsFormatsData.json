@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Банка",
+    "desc": "Удобно взять с собой",
+    "size": "150 грамм",
+    "img": { "src": "/imgs/whips-jar.webp", "alt": "Банка со жгутами" },
+    "links": { "ozon": "https://ozon.ru/t/jN5JLl2", "wildberries": "" }
+  },
+  {
+    "title": "Большая пачка",
+    "desc": "На большую компанию",
+    "size": "500 грамм",
+    "img": { "src": "/imgs/whips-big.webp", "alt": "Большая пачка жгутов" },
+    "links": { "ozon": "https://ozon.ru/t/BK29r25", "wildberries": "" }
+  },
+  {
+    "title": "Box",
+    "desc": "Идеально в подарок",
+    "size": "10 упаковок по 80 грамм",
+    "img": {
+      "src": "/imgs/whips-box.webp",
+      "alt": "Коробка с 10 упаковками жгутов"
+    },
+    "links": { "ozon": "https://ozon.ru/t/e8MzpVR", "wildberries": "" }
+  }
+]

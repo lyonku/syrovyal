@@ -1,0 +1,108 @@
+[
+  {
+    "text": "Аджика",
+    "name": "adjika",
+    "mainImg": { "src": "/imgs/whips-box/adjika.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/adjika-logo.webp",
+      "alt": "надпись аджика на заднем фоне специи и овощи"
+    },
+    "links": { "ozon": "https://ozon.ru/t/EpE1JR0", "wildberries": "" }
+  },
+  {
+    "text": "4 перца",
+    "name": "chetyre-pertsa",
+    "mainImg": { "src": "/imgs/whips-box/chetyre-pertsa.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/chetyre-pertsa-logo.webp",
+      "alt": "надпись четыре перца, на заднем фоне четыре разновидности перца"
+    },
+    "links": { "ozon": "", "wildberries": "" }
+  },
+  {
+    "text": "Классические",
+    "name": "klassicheskiye",
+    "mainImg": { "src": "/imgs/whips-box/klassicheskiye.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/klassicheskiye-logo.webp",
+      "alt": "надпись классические, на заднем фоне жгуты со специями"
+    },
+    "links": { "ozon": "https://ozon.ru/t/DMX4r0q", "wildberries": "" }
+  },
+  {
+    "text": "Брусничные",
+    "name": "brusnichnyye",
+    "mainImg": { "src": "/imgs/whips-box/brusnichnyye.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/brusnichnyye-logo.webp",
+      "alt": "надпись брусничные, на заднем фоне брусника"
+    },
+    "links": { "ozon": "https://ozon.ru/t/baK9lyN", "wildberries": "" }
+  },
+  {
+    "text": "С сыром",
+    "name": "s-syrom",
+    "mainImg": { "src": "/imgs/whips-box/s-syrom.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/s-syrom-logo.webp",
+      "alt": "надпись с сыром, на заднем фоне 2 кусочка сыра со специями "
+    },
+    "links": { "ozon": "https://ozon.ru/t/adMyVez", "wildberries": "" }
+  },
+  {
+    "text": "Кавказские аджика",
+    "name": "kavkazskiye-adzhika",
+    "mainImg": { "src": "/imgs/whips-box/kavkazskiye.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/kavkazskiye-adzhika-logo.webp",
+      "alt": "надпись кавказские с аджикой, на заднем фоне тарелка с аджикой, специями и жгутами"
+    },
+    "links": { "ozon": "", "wildberries": "" }
+  },
+  {
+    "text": "Хамон",
+    "name": "xamon",
+    "mainImg": { "src": "/imgs/whips-box/xamon.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/xamon-logo.webp",
+      "alt": "надпись хамон, на заднем фоне хамон с жгутами и мясом"
+    },
+    "links": { "ozon": "https://ozon.ru/t/l9MPVZJ", "wildberries": "" }
+  },
+  {
+    "text": "Кавказские бастурма",
+    "name": "kavkazskiye-basturma",
+    "mainImg": {
+      "src": "/imgs/whips-box/kavkazskiye.webp",
+      "alt": ""
+    },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/kavkazskiye-basturma-logo.webp",
+      "alt": "надпись кавказские с бастурмой, на заднем фоне бастурма, специи и жгуты"
+    },
+    "links": { "ozon": "", "wildberries": "" }
+  },
+  {
+    "text": "Жгучий чили",
+    "name": "zhguchiy-chili",
+    "mainImg": { "src": "/imgs/whips-box/zhguchiy-chili.webp", "alt": "" },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/zhguchiy-chili-logo.webp",
+      "alt": "надпись жгучий чили, на заднем фоне, острый перец чили"
+    },
+    "links": { "ozon": "https://ozon.ru/t/XYkXqzw", "wildberries": "" }
+  },
+  {
+    "text": "Кавказские шашлык",
+    "name": "kavkazskiye-shashlyk",
+    "mainImg": {
+      "src": "/imgs/whips-box/kavkazskiye.webp",
+      "alt": ""
+    },
+    "logoImg": {
+      "src": "/imgs/whips-flavors/kavkazskiye-shashlyk-logo.webp",
+      "alt": "надпись кавказские с шашлыком, на заднем фоне шашлык, специи и жгуты, овощи"
+    },
+    "links": { "ozon": "", "wildberries": "" }
+  }
+]

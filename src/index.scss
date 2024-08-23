@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "American Captain";
+  src: local("American Captain"),
+    url("../public/fonts/AmericanCaptain.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "American Captain";
+  src: local("American Captain"),
+    url("../public/fonts/AmericanCaptain.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --blood-color: #611210;
+  --brown-color: #ad5d33;
+  --black-bean-color: #410b0a;
+}
+
+html {
+  // font-size: clamp(1rem, 0.5rem + 1vw, 1.25rem);
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #000000;
+  color: var(--white-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+
+  font-family: "American Captain";
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+
+  font-family: "American Captain";
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.visibility-hidden {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}

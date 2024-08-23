@@ -1,0 +1,83 @@
+.footer {
+  background: linear-gradient(180deg, #000000 0%, #611210 100%);
+  display: flex;
+  justify-content: center;
+
+  &__wrap {
+    padding: 50px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 200px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    img {
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 100%;
+    padding: 10px;
+
+    &_youtube {
+      background: #f40000;
+    }
+
+    &_vk {
+      background: #7294c7;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-title {
+      font-size: 32px;
+      font-family: "American Captain";
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-item {
+      list-style: none;
+
+      &-link {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: var(--white-color);
+        transition: color 0.3s;
+      }
+
+      &-link:hover {
+        color: #e97d44;
+      }
+    }
+  }
+}

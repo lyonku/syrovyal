@@ -1,0 +1,151 @@
+.whips-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__logo {
+    width: 17.25rem;
+    margin-bottom: 7rem;
+  }
+}
+
+.whips-formats {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+
+  margin-bottom: 10rem;
+
+  &__list {
+    display: flex;
+    gap: 3.75rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.3s, scale 0.3s;
+
+    a {
+      color: var(--white-color);
+      display: flex;
+      flex-direction: column;
+
+      border: 1px solid #ad5d33;
+      padding: 1.2rem;
+
+      max-width: 16.5rem;
+      width: 100%;
+    }
+
+    &-img {
+      max-width: 14rem;
+      margin-bottom: 1rem;
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: "American Captain";
+      margin-bottom: 1rem;
+    }
+
+    &-hr {
+      width: 100%;
+      height: 1px;
+      border: 0;
+      background-color: var(--brown-color);
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      margin-bottom: 0.75rem;
+    }
+
+    &:hover {
+      scale: 1.05;
+      background-color: #ad5e332d;
+    }
+  }
+}
+
+.whips-flavors {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 2.75rem;
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding: 0 1.5rem;
+
+    img {
+      max-width: 17.5rem;
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 15rem;
+      border: 1px solid var(--brown-color);
+    }
+  }
+
+  &__list {
+    max-width: 37rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: calc(50% - 1.2rem);
+
+    list-style: none;
+
+    a {
+      color: var(--white-color);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      border-radius: 100%;
+      width: 3.6rem;
+      aspect-ratio: 1;
+      border: 2px solid var(--black-color);
+      transition: border 0.3s;
+    }
+
+    &-text {
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    &:hover &-text,
+    .active &-text {
+      color: #e97d44;
+    }
+
+    &:hover &-img,
+    .active &-img {
+      border: 2px solid var(--brown-color);
+    }
+  }
+}

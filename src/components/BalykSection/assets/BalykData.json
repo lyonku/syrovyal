@@ -1,0 +1,20 @@
+[
+  {
+    "img": { "src": "/imgs/balyks/xamon.webp", "alt": "" },
+    "title": "Чипсы мясные «Хамон»",
+    "desc": "500 грамм",
+    "links": { "ozon": "https://ozon.ru/t/3MARV7A", "wildberries": "" }
+  },
+  {
+    "img": { "src": "/imgs/balyks/original.webp", "alt": "" },
+    "title": "Чипсы мясные «Оригинальный»",
+    "desc": "500 грамм",
+    "links": { "ozon": "https://ozon.ru/t/DMXdZ84", "wildberries": "" }
+  },
+  {
+    "img": { "src": "/imgs/balyks/zhguchiy-chili.webp", "alt": "" },
+    "title": "Чипсы мясные «Жгучий Чили»",
+    "desc": "500 грамм",
+    "links": { "ozon": "https://ozon.ru/t/J51PaZj", "wildberries": "" }
+  }
+]

@@ -1,0 +1,40 @@
+.header {
+  padding: 1rem 6rem;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  background: linear-gradient(180deg, #611210 0%, #000000 100%);
+
+  &__logo {
+    width: 14rem;
+  }
+
+  &__nav {
+    max-width: 40rem;
+    width: -webkit-fill-available;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    &-item {
+      transition: transform 0.2s;
+
+      a {
+        color: var(--white-color);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
