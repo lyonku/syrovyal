@@ -1,8 +1,17 @@
 .reviews-section {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.75rem;
+  justify-content: center;
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 72rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+  }
 
   &__carousel {
     max-width: 60rem;
@@ -30,7 +39,7 @@
     &-btn {
       cursor: pointer;
       position: absolute;
-      background-color: #000000;
+      background-color: #00000000;
       z-index: 5;
 
       img {
@@ -80,5 +89,20 @@
       height: 0.8rem;
       background-color: #a92025;
     }
+  }
+
+  &__spices_left-bottom {
+    left: -7.5rem;
+    bottom: -11rem;
+    rotate: 190deg;
+    scale: 0.9;
+    filter: blur(3px);
+    z-index: -1;
+  }
+
+  &__spice_right-bottom {
+    right: 8.5rem;
+    bottom: -5rem;
+    rotate: 60deg;
   }
 }

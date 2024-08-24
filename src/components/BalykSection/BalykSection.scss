@@ -1,8 +1,17 @@
 .balyk-section {
+  position: relative;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 3.75rem;
+  justify-content: center;
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
 
   &__title {
     line-height: 2.2rem;
@@ -61,5 +70,37 @@
     flex-direction: column;
 
     color: var(--white-color);
+  }
+
+  &__sausage_right-bottom {
+    bottom: -10rem;
+    right: 10.5rem;
+  }
+
+  &__whip_right-top {
+    right: 0;
+    top: -14rem;
+    rotate: -70deg;
+    filter: blur(1px);
+  }
+
+  &__spices_right-center {
+    right: -2rem;
+    bottom: -5rem;
+    rotate: 5deg;
+    filter: blur(2px);
+  }
+
+  &__spice_left-top {
+    left: 0;
+    top: -5rem;
+    z-index: -1;
+  }
+
+  &__spice_left-bottom {
+    bottom: -6rem;
+    left: 6.5rem;
+    rotate: 80deg;
+    z-index: -1;
   }
 }

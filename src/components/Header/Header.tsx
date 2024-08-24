@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = () => {
             <a href="#balyk">Балык</a>
           </li>
           <li className="header__nav-item">
-            <a href="#chicken-chips">Отзывы</a>
+            <a href="#reviews">Отзывы</a>
           </li>
         </ul>
       </nav>

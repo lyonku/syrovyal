@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   gap: 7.5rem;
-  margin-bottom: 150px;
+  margin-bottom: 7.5rem;
 
   &__wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -68,6 +69,41 @@
       height: 20rem;
       border: 1px solid var(--brown-color);
     }
+  }
+
+  &__sausage_left-top {
+    left: 12.5rem;
+    top: 3rem;
+    z-index: -1;
+    filter: blur(2px);
+  }
+
+  &__spices_right-bottom {
+    right: -10rem;
+    bottom: -22.5rem;
+    z-index: -1;
+    filter: blur(1px);
+  }
+
+  &__spice_left-bottom {
+    left: -4rem;
+    bottom: -9rem;
+    rotate: 130deg;
+    z-index: -1;
+  }
+
+  &__spice_center-top {
+    top: -3rem;
+    right: 20rem;
+    z-index: -1;
+  }
+
+  &__whip_right-bottom {
+    right: 0px;
+    bottom: -22.5rem;
+    rotate: -75deg;
+    z-index: -1;
+    filter: blur(2px);
   }
 }
 

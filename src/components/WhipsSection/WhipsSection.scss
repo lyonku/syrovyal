@@ -1,11 +1,116 @@
 .whips-section {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 72rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
   &__logo {
     width: 17.25rem;
     margin-bottom: 7rem;
+  }
+
+  &__sausage_left-top {
+    z-index: -1;
+    top: 21.5rem;
+    left: 15rem;
+
+    rotate: -90deg;
+    filter: blur(2px);
+  }
+
+  &__sausage_left-center {
+    z-index: 1;
+    bottom: 30rem;
+    left: 5rem;
+  }
+
+  &__sausage_right-bottom {
+    right: 0.5rem;
+    bottom: 21rem;
+    rotate: -100deg;
+
+    filter: blur(1px);
+  }
+
+  &__spices_left-bottom {
+    bottom: 2rem;
+    left: -9rem;
+    z-index: -2;
+    rotate: -180deg;
+    filter: blur(2px);
+  }
+
+  &__spices_right-top {
+    top: 6.5rem;
+    right: -5rem;
+
+    rotate: 10deg;
+    z-index: -1;
+    filter: blur(2px);
+  }
+
+  &__whip_left-top {
+    width: 4.55rem;
+    height: 24.95rem;
+    top: -15rem;
+    left: -1rem;
+
+    rotate: -86deg;
+    filter: blur(1px);
+  }
+  &__whip_left-top-2 {
+    z-index: -1;
+    width: 4.55rem;
+    height: 24.95rem;
+    top: -16rem;
+    left: -4.25rem;
+
+    rotate: 126deg;
+    filter: blur(2px);
+  }
+  &__whip_right-center {
+    z-index: -1;
+    top: 40rem;
+    right: 6rem;
+    rotate: -110deg;
+    filter: blur(2px);
+  }
+  &__spice_right-top {
+    top: -6rem;
+    right: -2.75rem;
+    z-index: -1;
+    rotate: -160deg;
+  }
+  &__spice_right-bottom {
+    bottom: -6.6rem;
+    right: 11rem;
+    rotate: -240deg;
+    z-index: -1;
+  }
+  &__spice_left-bottom {
+    left: 11rem;
+    bottom: -5.5rem;
+    rotate: 80deg;
+    z-index: -1;
+  }
+
+  &__spice_right-center {
+    right: 10rem;
+    bottom: 30rem;
+    z-index: -1;
+  }
+
+  &__spice_left-top {
+    left: 4rem;
+    top: 14rem;
+    rotate: -120deg;
   }
 }
 
@@ -28,6 +133,7 @@
     cursor: pointer;
     list-style: none;
     transition: background-color 0.3s, scale 0.3s;
+    background-color: var(--black-color);
 
     a {
       color: var(--white-color);
@@ -67,7 +173,7 @@
 
     &:hover {
       scale: 1.05;
-      background-color: #ad5e332d;
+      background-color: #1f1109;
     }
   }
 }

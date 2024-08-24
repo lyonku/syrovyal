@@ -1,8 +1,17 @@
 .sauseges-section {
+  position: relative;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 3.75rem;
+  justify-content: center;
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 72rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
 
   &__title {
     max-width: 20rem;
@@ -62,5 +71,40 @@
     flex-direction: column;
 
     color: var(--white-color);
+  }
+
+  &__sausage_left-bottom {
+    bottom: -3.5rem;
+    left: 10rem;
+    z-index: -1;
+
+    rotate: 10deg;
+    filter: blur(2px);
+  }
+
+  &__sausage_right-top {
+    top: 0;
+    right: 0;
+  }
+
+  &__whip_left-top {
+    left: 0;
+    top: -15rem;
+    rotate: -70deg;
+    filter: blur(2px);
+  }
+
+  &__spice_right-center {
+    right: 0;
+    bottom: 5rem;
+    rotate: 30deg;
+    z-index: -1;
+  }
+
+  &__spice_center-top {
+    top: 2.5rem;
+    left: 21rem;
+    z-index: -1;
+    filter: blur(1px);
   }
 }

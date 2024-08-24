@@ -2,6 +2,10 @@ import { FC } from "react";
 import "./LastSection.scss";
 import MemoOzon from "components/Assets/Ozon";
 import MemoWildberries from "components/Assets/Wildberries";
+import Spice from "components/Assets/Spice";
+import Whip from "components/Assets/Whip";
+import Spices from "components/Assets/Spices";
+import Sausage from "components/Assets/Sausage";
 
 interface LastSectionProps {}
 
@@ -49,6 +53,12 @@ const LastSection: FC<LastSectionProps> = () => {
         <div className="last-section__img-wrap">
           <img src="/imgs/whips-demonstration.webp" alt="" />
         </div>
+
+        <Sausage className="last-section__sausage_left-top" />
+        <Spices className="last-section__spices_right-bottom" />
+        <Spice className="last-section__spice_left-bottom" type="3" />
+        <Spice className="last-section__spice_center-top" type="2" />
+        <Whip className="last-section__whip_right-bottom" />
       </div>
       <div className="start-section__links">
         <a

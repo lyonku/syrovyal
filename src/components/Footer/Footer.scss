@@ -4,27 +4,27 @@
   justify-content: center;
 
   &__wrap {
-    padding: 50px;
-    max-width: 1200px;
+    padding: 2.5rem;
+    max-width: 60rem;
     width: 100%;
     display: flex;
-    gap: 200px;
+    gap: 10rem;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
 
     img {
       width: 100%;
-      max-width: 160px;
+      max-width: 8rem;
     }
   }
 
   &__links {
     display: flex;
-    gap: 24px;
+    gap: 1.2rem;
   }
 
   &__link {
@@ -32,11 +32,11 @@
     align-items: center;
     justify-content: center;
 
-    width: 40px;
+    width: 2rem;
     aspect-ratio: 1 / 1;
 
     border-radius: 100%;
-    padding: 10px;
+    padding: 0.5rem;
 
     &_youtube {
       background: #f40000;
@@ -50,27 +50,27 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
 
     &-title {
-      font-size: 32px;
+      font-size: 1.6rem;
       font-family: "American Captain";
     }
 
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 0.8rem;
     }
 
     &-item {
       list-style: none;
 
       &-link {
-        font-size: 16px;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 0.8rem;
         color: var(--white-color);
         transition: color 0.3s;
       }
