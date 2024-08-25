@@ -7,10 +7,13 @@ import Sausage from "components/Assets/Sausage";
 import Spices from "components/Assets/Spices";
 import Whip from "components/Assets/Whip";
 import Spice from "components/Assets/Spice";
+import { LinksType } from "types";
 
-interface WhipsSectionProps {}
+interface WhipsSectionProps {
+  openModal: (links: LinksType) => void;
+}
 
-const WhipsSection: FC<WhipsSectionProps> = () => {
+const WhipsSection: FC<WhipsSectionProps> = ({ openModal }) => {
   return (
     <section className="whips-section" id="whips">
       <div className="whips-section__wrap">
@@ -20,8 +23,8 @@ const WhipsSection: FC<WhipsSectionProps> = () => {
           className="whips-section__logo"
           alt="надпись жгуты, в огне, логотип"
         />
-        <WhipsFormats />
-        <WhipsFlavors />
+        <WhipsFormats openModal={openModal} />
+        <WhipsFlavors openModal={openModal} />
         <Sausage className="whips-section__sausage_left-top" />
         <Sausage className="whips-section__sausage_left-center" />
         <Sausage className="whips-section__sausage_right-bottom" />

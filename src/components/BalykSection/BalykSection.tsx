@@ -5,9 +5,12 @@ import Sausage from "components/Assets/Sausage";
 import Whip from "components/Assets/Whip";
 import Spice from "components/Assets/Spice";
 import Spices from "components/Assets/Spices";
-interface BalykSectionProps {}
+import { LinksType } from "types";
+interface BalykSectionProps {
+  openModal: (links: LinksType) => void;
+}
 
-const BalykSection: FC<BalykSectionProps> = () => {
+const BalykSection: FC<BalykSectionProps> = ({ openModal }) => {
   return (
     <section className="balyk-section" id="balyk">
       <div className="balyk-section__wrap">
@@ -15,21 +18,18 @@ const BalykSection: FC<BalykSectionProps> = () => {
         <ul className="balyk-section__list">
           {BalykData.map((balyk, index) => {
             return (
-              <li className="balyk-section__item" key={index}>
-                <a
-                  href={balyk.links.ozon}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="balyk-section__link"
-                >
-                  <img
-                    src={balyk.img.src}
-                    alt=""
-                    className="balyk-section__item-img"
-                  />
-                  <p className="balyk-section__item-title">{balyk.title}</p>
-                  <p className="balyk-section__item-desc">{balyk.desc}</p>
-                </a>
+              <li
+                className="balyk-section__item"
+                key={index}
+                onClick={() => openModal(balyk.links)}
+              >
+                <img
+                  src={balyk.img.src}
+                  alt=""
+                  className="balyk-section__item-img"
+                />
+                <p className="balyk-section__item-title">{balyk.title}</p>
+                <p className="balyk-section__item-desc">{balyk.desc}</p>
               </li>
             );
           })}

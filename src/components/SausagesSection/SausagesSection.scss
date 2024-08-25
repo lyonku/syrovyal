@@ -50,6 +50,11 @@
 
     transition: background-color 0.3s, scale 0.3s;
 
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white-color);
+
     &-img {
       margin-bottom: 2.5rem;
     }
@@ -64,13 +69,6 @@
       scale: 1.05;
       background-color: #1f1109;
     }
-  }
-
-  &__link {
-    display: flex;
-    flex-direction: column;
-
-    color: var(--white-color);
   }
 
   &__sausage_left-bottom {
@@ -119,18 +117,13 @@
       gap: 12px;
 
       &::after {
-        max-width: 400px;
-        left: -5px;
-        height: 80%;
-        transform: translateY(-50%);
+        display: none;
       }
     }
 
     &__item {
       width: 100%;
       max-width: 24rem;
-      a {
-      }
 
       &-img {
         width: 100%;

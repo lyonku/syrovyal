@@ -124,12 +124,15 @@
     padding: 0 14px;
     position: relative;
     gap: 3rem;
+
     &__info-wrap {
       width: 100%;
     }
+
     &__title {
       max-width: 20rem;
     }
+
     &__list {
       z-index: 2;
       position: absolute;

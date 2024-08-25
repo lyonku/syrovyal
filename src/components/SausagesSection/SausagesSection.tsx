@@ -4,10 +4,13 @@ import SausagesData from "./assets/SausagesData.json";
 import Sausage from "components/Assets/Sausage";
 import Whip from "components/Assets/Whip";
 import Spice from "components/Assets/Spice";
+import { LinksType } from "types";
 
-interface SausagesSectionProps {}
+interface SausagesSectionProps {
+  openModal: (links: LinksType) => void;
+}
 
-const SausagesSection: FC<SausagesSectionProps> = () => {
+const SausagesSection: FC<SausagesSectionProps> = ({ openModal }) => {
   return (
     <section className="sauseges-section" id="mini-sausages">
       <div className="sauseges-section__wrap">
@@ -17,23 +20,18 @@ const SausagesSection: FC<SausagesSectionProps> = () => {
         <ul className="sauseges-section__list">
           {SausagesData.map((sausage, index) => {
             return (
-              <li className="sauseges-section__item" key={index}>
-                <a
-                  href={sausage.links.ozon}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="sauseges-section__link"
-                >
-                  <img
-                    src={sausage.img.src}
-                    alt=""
-                    className="sauseges-section__item-img"
-                  />
-                  <p className="sauseges-section__item-title">
-                    {sausage.title}
-                  </p>
-                  <p className="sauseges-section__item-desc">{sausage.desc}</p>
-                </a>
+              <li
+                className="sauseges-section__item"
+                key={index}
+                onClick={() => openModal(sausage.links)}
+              >
+                <img
+                  src={sausage.img.src}
+                  alt=""
+                  className="sauseges-section__item-img"
+                />
+                <p className="sauseges-section__item-title">{sausage.title}</p>
+                <p className="sauseges-section__item-desc">{sausage.desc}</p>
               </li>
             );
           })}
