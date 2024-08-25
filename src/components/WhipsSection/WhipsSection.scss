@@ -255,3 +255,57 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .whips-section {
+    padding: 0 14px;
+  }
+
+  .whips-formats {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &__item {
+      width: 90%;
+      list-style: none;
+
+      a {
+        max-width: none;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 1rem;
+
+        img {
+          max-width: 160px;
+          margin-bottom: 0;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      &-title {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .whips-flavors {
+    &__wrap {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__list {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}

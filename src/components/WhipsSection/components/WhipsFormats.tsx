@@ -17,10 +17,12 @@ const WhipsFormats: FC<WhipsFormatsProps> = () => {
                   alt={format.img.alt}
                   className="whips-formats__item-img"
                 />
-                <p className="whips-formats__item-title">{format.title}</p>
-                <hr className="whips-formats__item-hr" />
-                <p className="whips-formats__item-desc">{format.desc}</p>
-                <p className="whips-formats__item-size">{format.size}</p>
+                <div>
+                  <p className="whips-formats__item-title">{format.title}</p>
+                  <hr className="whips-formats__item-hr" />
+                  <p className="whips-formats__item-desc">{format.desc}</p>
+                  <p className="whips-formats__item-size">{format.size}</p>
+                </div>
               </a>
             </li>
           );

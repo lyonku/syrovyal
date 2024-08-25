@@ -115,6 +115,7 @@
   }
 
   &__link {
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +183,7 @@
     top: 4rem;
     left: 0rem;
     rotate: -85deg;
-
+    z-index: -1;
     filter: blur(1px);
   }
 
@@ -233,5 +234,80 @@
     right: -7rem;
     rotate: 50deg;
     filter: blur(1px);
+  }
+}
+
+@media (max-width: 700px) {
+  .start-section {
+    padding: 30px 14px 0;
+
+    &__wrap {
+      gap: 2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      max-width: 300px;
+    }
+
+    &__advantages {
+      &-list {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      &-item {
+        height: 60px;
+        position: relative;
+        max-width: 15.714rem;
+        padding: 0.6rem 1.35rem 0.6rem 0.6rem;
+        width: calc(50% - 1rem);
+
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          right: -0.571rem;
+          bottom: -0.571rem;
+          position: absolute;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          z-index: 3;
+        }
+      }
+    }
+
+    &__info-block {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    &__img-wrap {
+      margin-top: 1rem;
+      &::before {
+        height: 10rem;
+        left: -0.5rem;
+        top: -1rem;
+      }
+    }
+
+    &__links {
+      margin-top: 1rem;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    &__link {
+      width: 12rem;
+      height: 3.2rem;
+    }
   }
 }

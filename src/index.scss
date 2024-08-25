@@ -21,7 +21,7 @@
 }
 
 html {
-  font-size: clamp(0.5rem, 0.25rem + 1vw, 1.6rem);
+  font-size: clamp(0.6rem, 0.25rem + 1vw, 1.6rem);
   // font-size: 20px;
   scroll-behavior: smooth;
 }
@@ -56,6 +56,7 @@ nav ul {
 }
 
 h1 {
+  z-index: 2;
   text-align: center;
 
   font-family: "American Captain";
@@ -64,6 +65,7 @@ h1 {
 }
 
 h2 {
+  z-index: 2;
   text-align: center;
 
   font-family: "American Captain";
@@ -83,4 +85,51 @@ h2 {
 .sausage {
   user-select: none;
   position: absolute;
+}
+
+.whip {
+  width: 4.55rem;
+  height: 24.95rem;
+}
+
+.spices {
+  width: 18.6rem;
+  height: 26.65rem;
+}
+
+.sausage {
+  width: 5.45rem;
+  height: 4.7rem;
+}
+
+.spices-1 {
+  width: 2.4rem;
+  height: 6.45rem;
+}
+
+.spices-2 {
+  width: 5.5rem;
+  height: 4.65rem;
+}
+
+.spices-3 {
+  width: 6.55rem;
+  height: 11.05rem;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .whip,
+  .spice,
+  .spices,
+  .sausage {
+    // display: none;
+  }
 }

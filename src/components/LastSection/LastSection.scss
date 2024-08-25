@@ -118,3 +118,46 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .last-section {
+    padding: 0 14px;
+    position: relative;
+    gap: 3rem;
+    &__info-wrap {
+      width: 100%;
+    }
+    &__title {
+      max-width: 20rem;
+    }
+    &__list {
+      z-index: 2;
+      position: absolute;
+      left: 5px;
+      bottom: 0px;
+    }
+
+    &__item {
+      border: 1px solid var(--black-color);
+      background: #410b0ab9;
+      backdrop-filter: blur(3px);
+    }
+
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+
+    &__img-wrap {
+      img {
+        width: 100%;
+      }
+
+      &::before {
+        top: -15px;
+        right: -10px;
+      }
+    }
+  }
+}

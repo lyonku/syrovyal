@@ -10,7 +10,7 @@ const Spice: FC<SpiceProps> = ({ type, className }) => {
     <img
       src={`/imgs/spices-${type}.webp`}
       alt=""
-      className={`spice ${className}`}
+      className={`spice spices-${type} ${className}`}
     />
   );
 };
