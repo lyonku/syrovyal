@@ -24,7 +24,7 @@ const Footer: FC<FooterProps> = () => {
               />
             </a>
             <a
-              href="https://vk.com/ooo_orion"
+              href="https://vk.com/syrovyal_orion"
               target="_blank"
               rel="noreferrer"
               className="footer__link footer__link_vk"
