@@ -1,5 +1,5 @@
 ## Active website URL:
-https://syroval.netlify.app/
+https://syrovyal26.ru/
 
 # Getting Started with Create React App
 
