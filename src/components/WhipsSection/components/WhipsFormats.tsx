@@ -1,17 +1,17 @@
 import { FC } from "react";
-import WhipsFormatsData from "../assets/WhipsFormatsData.json";
 import { LinksType } from "types";
 
 interface WhipsFormatsProps {
   openModal: (links: LinksType) => void;
+  data: any[];
 }
 
-const WhipsFormats: FC<WhipsFormatsProps> = ({ openModal }) => {
+const WhipsFormats: FC<WhipsFormatsProps> = ({ openModal, data }) => {
   return (
     <article className="whips-formats">
       <h2 className="whips-formats__title">Форматы жгутов</h2>
       <ul className="whips-formats__list">
-        {WhipsFormatsData.map((format, index) => {
+        {data.map((format, index) => {
           return (
             <li
               className="whips-formats__item"

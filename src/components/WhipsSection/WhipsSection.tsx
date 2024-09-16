@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
 import "./WhipsSection.scss";
 import WhipsFlavors from "./components/WhipsFlavors";
@@ -14,6 +14,21 @@ interface WhipsSectionProps {
 }
 
 const WhipsSection: FC<WhipsSectionProps> = ({ openModal }) => {
+  const [WhipsFlavorsData, setWhipsFlavorsData] = useState([]);
+  const [WhipsFormatsData, setWhipsFormatsData] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/WhipsFlavorsData.json`)
+      .then((response) => response.json())
+      .then((jsonData) => setWhipsFlavorsData(jsonData))
+      .catch((error) => console.error("Error loading JSON:", error));
+
+    fetch(`${process.env.PUBLIC_URL}/WhipsFormatsData.json`)
+      .then((response) => response.json())
+      .then((jsonData) => setWhipsFormatsData(jsonData))
+      .catch((error) => console.error("Error loading JSON:", error));
+  }, []);
+
   return (
     <section className="whips-section" id="whips">
       <div className="whips-section__wrap">
@@ -23,8 +38,8 @@ const WhipsSection: FC<WhipsSectionProps> = ({ openModal }) => {
           className="whips-section__logo"
           alt="надпись жгуты, в огне, логотип"
         />
-        <WhipsFormats openModal={openModal} />
-        <WhipsFlavors openModal={openModal} />
+        <WhipsFormats openModal={openModal} data={WhipsFormatsData} />
+        <WhipsFlavors openModal={openModal} data={WhipsFlavorsData} />
         <Sausage className="whips-section__sausage_left-top" />
         <Sausage className="whips-section__sausage_left-center" />
         <Sausage className="whips-section__sausage_right-bottom" />

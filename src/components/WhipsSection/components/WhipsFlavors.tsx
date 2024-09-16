@@ -1,40 +1,24 @@
 import { FC, useEffect, useState } from "react";
-import WhipsFlavorsData from "../assets/WhipsFlavorsData.json";
 import { LinksType } from "types";
 
 interface WhipsFlavorsProps {
   openModal: (links: LinksType) => void;
+  data: any[];
 }
 
-const WhipsFlavors: FC<WhipsFlavorsProps> = ({ openModal }) => {
+const WhipsFlavors: FC<WhipsFlavorsProps> = ({ openModal, data }) => {
   const [activeWhipsBox, setActiveWhipsBox] = useState("adjika");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    if (!isHovered) {
-      const interval = setInterval(() => {
-        setCurrentIndex(
-          (prevIndex) => (prevIndex + 1) % WhipsFlavorsData.length
-        );
-      }, 3000);
-
-      return () => clearInterval(interval);
+    if (data.length >= 1) {
+      setActiveWhipsBox(data[currentIndex].name);
     }
-  }, [isHovered]);
-
-  useEffect(() => {
-    setActiveWhipsBox(WhipsFlavorsData[currentIndex].name);
-  }, [currentIndex]);
+  }, [currentIndex, data]);
 
   const handleMouseEnter = (name: string, index: number) => {
-    setIsHovered(true);
     setActiveWhipsBox(name);
     setCurrentIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
   };
 
   return (
@@ -42,7 +26,7 @@ const WhipsFlavors: FC<WhipsFlavorsProps> = ({ openModal }) => {
       <h2 className="whips-flavors__title">Вкусы сыровяленных жгутов</h2>
       <div className="whips-flavors__wrap">
         <div className="whips-flavors__img-wrap">
-          {WhipsFlavorsData.map((flavor, index) => (
+          {data.map((flavor, index) => (
             <img
               key={flavor.name}
               src={`/imgs/whips-box/${flavor.name}.webp`}
@@ -59,7 +43,7 @@ const WhipsFlavors: FC<WhipsFlavorsProps> = ({ openModal }) => {
           ))}
         </div>
         <ul className="whips-flavors__list">
-          {WhipsFlavorsData.map((flavor, index) => {
+          {data.map((flavor, index) => {
             const isActiveItem = activeWhipsBox === flavor.name;
             return (
               <li
@@ -68,7 +52,6 @@ const WhipsFlavors: FC<WhipsFlavorsProps> = ({ openModal }) => {
                 }`}
                 key={index}
                 onMouseEnter={() => handleMouseEnter(flavor.name, index)}
-                onMouseLeave={handleMouseLeave}
                 onClick={() => openModal(flavor.links)}
               >
                 <img

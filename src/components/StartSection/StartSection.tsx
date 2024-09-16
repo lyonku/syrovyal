@@ -11,13 +11,13 @@ interface StartSectionProps {}
 
 const StartSection: FC<StartSectionProps> = () => {
   const advantagesMass = [
-    { img: { src: "/imgs/time.png", alt: "" }, text: "Быстрый перекус" },
-    { img: { src: "/imgs/beers.png", alt: "" }, text: "Идеально к пенному" },
+    { img: { src: "/imgs/time.webp", alt: "" }, text: "Быстрый перекус" },
+    { img: { src: "/imgs/beers.webp", alt: "" }, text: "Идеально к пенному" },
     {
-      img: { src: "/imgs/handshake.png", alt: "" },
+      img: { src: "/imgs/handshake.webp", alt: "" },
       text: "В компании с друзьями",
     },
-    { img: { src: "/imgs/gift.png", alt: "" }, text: "Оригинальный подарок" },
+    { img: { src: "/imgs/gift.webp", alt: "" }, text: "Оригинальный подарок" },
   ];
 
   return (

@@ -7,7 +7,10 @@
       "src": "/imgs/whips-flavors/adjika-logo.webp",
       "alt": "надпись аджика на заднем фоне специи и овощи"
     },
-    "links": { "ozon": "https://ozon.ru/t/EpE1JR0", "wildberries": "" }
+    "links": {
+      "ozon": "https://ozon.ru/t/EpE1JR0",
+      "wildberries": "https://wildberries.ru/"
+    }
   },
   {
     "text": "4 перца",
@@ -17,7 +20,7 @@
       "src": "/imgs/whips-flavors/chetyre-pertsa-logo.webp",
       "alt": "надпись четыре перца, на заднем фоне четыре разновидности перца"
     },
-    "links": { "ozon": "", "wildberries": "" }
+    "links": { "ozon": "", "wildberries": "https://wildberries.ru/" }
   },
   {
     "text": "Классические",

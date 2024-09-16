@@ -1,16 +1,34 @@
-import { FC } from "react";
-import BalykData from "./assets/BalykData.json";
+import { FC, useEffect, useState } from "react";
 import "./BalykSection.scss";
 import Sausage from "components/Assets/Sausage";
 import Whip from "components/Assets/Whip";
 import Spice from "components/Assets/Spice";
 import Spices from "components/Assets/Spices";
 import { LinksType } from "types";
+
+interface BalykItem {
+  img: {
+    src: string;
+  };
+  title: string;
+  desc: string;
+  links: LinksType;
+}
+
 interface BalykSectionProps {
   openModal: (links: LinksType) => void;
 }
 
 const BalykSection: FC<BalykSectionProps> = ({ openModal }) => {
+  const [BalykData, setBalykData] = useState<BalykItem[]>([]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/BalykData.json`)
+      .then((response) => response.json())
+      .then((jsonData) => setBalykData(jsonData))
+      .catch((error) => console.error("Error loading JSON:", error));
+  }, []);
+
   return (
     <section className="balyk-section" id="balyk">
       <div className="balyk-section__wrap">
